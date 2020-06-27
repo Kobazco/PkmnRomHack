@@ -218,14 +218,28 @@ Route101_EventScript_RouteSign:: @ 81EBE0D
 Route101_EventScript_BirchsBag:: @ 81EBE16
 	lock
 	faceplayer
+	msgbox Text_ChooseLetter, MSGBOX_DEFAULT
+	closemessage
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_RESCUED_BIRCH
-	fadescreen FADE_TO_BLACK
-	removeobject 4
+	scrollingmultichoice 0, 2, 3, 5, FALSE
+	msgbox Text_ChoosePokemon, MSGBOX_DEFAULT
+	switch VAR_RESULT
+	callcase 0, Route101_Kanto_Pokemon
+	callcase 1, Route101_Johto_Pokemon
+	callcase 2, Route101_Hoenn_Pokemon
+	callcase 3, Route101_Sinnoh_Pokemon
+	callcase 4, Route101_Unova_Pokemon
+	callcase 5, Route101_Kalos_Pokemon
+	callcase 6, Route101_Alola_Pokemon
+	callcase 7, Route101_Other_Pokemon
+	closemessage
+	special ChooseStarter
+	waitmovement 0
+	setvar VAR_STARTER_MON, 255
 	setobjectxy OBJ_EVENT_ID_PLAYER, 6, 13
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
-	waitmovement 0
-	special ChooseStarter
+	removeobject 4
 	waitstate
 	applymovement 2, Route101_Movement_BirchApproachPlayer
 	waitmovement 0
@@ -246,6 +260,7 @@ Route101_EventScript_BirchsBag:: @ 81EBE16
 	waitstate
 	release
 	end
+
 
 Route101_EventScript_HideMayInBedroom:: @ 81EBE85
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
@@ -299,3 +314,146 @@ Route101_Text_RouteSign: @ 81EC0C8
 	.string "ROUTE 101\n"
 	.string "{UP_ARROW} OLDALE TOWN$"
 
+Route101_Kanto_Pokemon:
+	hidemonpic
+	closemessage
+	scrollingmultichoice 1, 2, 3, 3, TRUE
+	compare VAR_RESULT, 0x7F
+	goto_if_eq Route101_EventScript_BirchsBag
+	GetStarterName
+	showmonpic VAR_0x8002, 10, 3
+	playmoncry VAR_0x8002, 0
+	msgbox Text_YouSure, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	call_if_eq Route101_ImSure
+	compare VAR_RESULT, NO
+	goto_if_eq Route101_Kanto_Pokemon
+	return
+	
+Route101_Johto_Pokemon:
+	hidemonpic
+	closemessage
+	scrollingmultichoice 2, 2, 3, 3, TRUE
+	compare VAR_RESULT, 0x7F
+	goto_if_eq Route101_EventScript_BirchsBag
+	GetStarterName
+	showmonpic VAR_0x8002, 10, 3
+	playmoncry VAR_0x8002, 0
+	msgbox Text_YouSure, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	call_if_eq Route101_ImSure
+	compare VAR_RESULT, NO
+	goto_if_eq Route101_Johto_Pokemon
+	return
+	
+Route101_Hoenn_Pokemon:
+	hidemonpic
+	closemessage
+	scrollingmultichoice 3, 2, 3, 3, TRUE
+	compare VAR_RESULT, 0x7F
+	goto_if_eq Route101_EventScript_BirchsBag
+	GetStarterName
+	showmonpic VAR_0x8002, 10, 3
+	playmoncry VAR_0x8002, 0
+	msgbox Text_YouSure, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	call_if_eq Route101_ImSure
+	compare VAR_RESULT, NO
+	goto_if_eq Route101_Hoenn_Pokemon
+	return
+	
+Route101_Sinnoh_Pokemon:
+	hidemonpic
+	closemessage
+	scrollingmultichoice 4, 2, 3, 3, TRUE
+	compare VAR_RESULT, 0x7F
+	goto_if_eq Route101_EventScript_BirchsBag
+	GetStarterName
+	showmonpic VAR_0x8002, 10, 3
+	playmoncry VAR_0x8002, 0
+	msgbox Text_YouSure, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	call_if_eq Route101_ImSure
+	compare VAR_RESULT, NO
+	goto_if_eq Route101_Sinnoh_Pokemon
+	return
+	
+Route101_Unova_Pokemon:
+	hidemonpic
+	closemessage
+	scrollingmultichoice 5, 2, 3, 3, TRUE
+	compare VAR_RESULT, 0x7F
+	goto_if_eq Route101_EventScript_BirchsBag
+	GetStarterName
+	showmonpic VAR_0x8002, 10, 3
+	playmoncry VAR_0x8002, 0
+	msgbox Text_YouSure, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	call_if_eq Route101_ImSure
+	compare VAR_RESULT, NO
+	goto_if_eq Route101_Unova_Pokemon
+	return
+
+Route101_Kalos_Pokemon:
+	hidemonpic
+	closemessage
+	scrollingmultichoice 6, 2, 3, 3, TRUE
+	compare VAR_RESULT, 0x7F
+	goto_if_eq Route101_EventScript_BirchsBag
+	GetStarterName
+	showmonpic VAR_0x8002, 10, 3
+	playmoncry VAR_0x8002, 0
+	msgbox Text_YouSure, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	call_if_eq Route101_ImSure
+	compare VAR_RESULT, NO
+	goto_if_eq Route101_Kalos_Pokemon
+	return
+	
+Route101_Alola_Pokemon:
+	hidemonpic
+	closemessage
+	scrollingmultichoice 7, 2, 3, 3, TRUE
+	compare VAR_RESULT, 0x7F
+	goto_if_eq Route101_EventScript_BirchsBag
+	GetStarterName
+	showmonpic VAR_0x8002, 10, 3
+	playmoncry VAR_0x8002, 0
+	msgbox Text_YouSure, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	call_if_eq Route101_ImSure
+	compare VAR_RESULT, NO
+	goto_if_eq Route101_Alola_Pokemon
+	return
+	
+Route101_Other_Pokemon:
+	hidemonpic
+	closemessage
+	scrollingmultichoice 8, 2, 3, 1, TRUE
+	compare VAR_RESULT, 0x7F
+	goto_if_eq Route101_EventScript_BirchsBag
+	GetStarterName
+	showmonpic VAR_0x8002, 10, 3
+	playmoncry VAR_0x8002, 0
+	msgbox Text_YouSure, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	call_if_eq Route101_ImSure
+	compare VAR_RESULT, NO
+	goto_if_eq Route101_Other_Pokemon
+	return
+
+Route101_ImSure::
+	hidemonpic
+	copyvar VAR_RESULT, VAR_0x8001
+	return
+	
+Text_ChooseLetter:
+	.string "Choose the region of the\n"
+	.string "starter Pokemon that you want.$"
+	
+Text_ChoosePokemon:
+	.string "Choose which Pokemon you want.\n"
+	.string "Press B to go back to prior list.$"
+
+Text_YouSure:
+	.string "Are you sure you want {STR_VAR_1}?$"

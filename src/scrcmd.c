@@ -2299,3 +2299,77 @@ bool8 ScrCmd_warpsootopolislegend(struct ScriptContext *ctx)
     ResetInitialPlayerAvatarState();
     return TRUE;
 }
+void ScrCmd_GetStarterName(void)
+{
+	gSpecialVar_0x8001 = gSpecialVar_Result;
+	switch(gSpecialVar_Result)
+	{
+		case 8:
+			gSpecialVar_0x8002 = 1;
+			break;
+		case 9:
+			gSpecialVar_0x8002 = 4;
+			break;
+		case 10:
+			gSpecialVar_0x8002 = 7;
+			break;
+		case 11:
+			gSpecialVar_0x8002 = 152;
+			break;
+		case 12:
+			gSpecialVar_0x8002 = 155;
+			break;
+		case 13:
+			gSpecialVar_0x8002 = 158;
+			break;
+		case 14:
+			gSpecialVar_0x8002 = 252;
+			break;
+		case 15:
+			gSpecialVar_0x8002 = 255;
+			break;
+		case 16:
+			gSpecialVar_0x8002 = 258;
+			break;
+		case 17:
+			gSpecialVar_0x8002 = 387;
+			break;
+		case 18:
+			gSpecialVar_0x8002 = 390;
+			break;
+		case 19:
+			gSpecialVar_0x8002 = 393;
+			break;
+		case 20:
+			gSpecialVar_0x8002 = 495;
+			break;
+		case 21:
+			gSpecialVar_0x8002 = 498;
+			break;
+		case 22:
+			gSpecialVar_0x8002 = 501;
+			break;
+		case 23:
+			gSpecialVar_0x8002 = 650;
+			break;
+		case 24:
+			gSpecialVar_0x8002 = 653;
+			break;
+		case 25:
+			gSpecialVar_0x8002 = 656;
+			break;
+		case 26:
+			gSpecialVar_0x8002 = 722;
+			break;
+		case 27:
+			gSpecialVar_0x8002 = 725;
+			break;
+		case 28:
+			gSpecialVar_0x8002 = 728;
+			break;
+		case 29:
+			gSpecialVar_0x8002 = 133;
+			break;
+				}
+	StringCopy(gStringVar1, gSpeciesNames[gSpecialVar_0x8002]);
+}
