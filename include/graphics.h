@@ -8102,4 +8102,13 @@ extern const u16 gPokenavMessageBox_Pal[];
 extern const u32 gPokenavOptions_Gfx[];
 extern const u16 gPokenavOptions_Pal[];
 
+// Regional variants
+extern const u32 gMonFrontPic_IceSlugma[];
+extern const u32 gMonPalette_IceSlugma[];
+extern const u32 gMonBackPic_IceSlugma[];
+extern const u32 gMonShinyPalette_IceSlugma[];
+extern const u32 gMonStillFrontPic_IceSlugma[];
+extern const u8 gMonIcon_IceSlugma[];
+extern const u8 gMonFootprint_IceSlugma[];
+
 #endif //GUARD_GRAPHICS_H

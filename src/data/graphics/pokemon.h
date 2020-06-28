@@ -5003,3 +5003,10 @@ const u8 gMonFootprint_Latios[] = INCBIN_U8("graphics/pokemon/latios/footprint.1
 const u8 gMonFootprint_Jirachi[] = INCBIN_U8("graphics/pokemon/jirachi/footprint.1bpp");
 const u8 gMonFootprint_Deoxys[] = INCBIN_U8("graphics/pokemon/deoxys/footprint.1bpp");
 const u8 gMonFootprint_Chimecho[] = INCBIN_U8("graphics/pokemon/chimecho/footprint.1bpp");
+
+const u32 gMonFrontPic_IceSlugma[] = INCBIN_U32("graphics/pokemon/variant_slugma/anim_front.4bpp.lz");
+const u32 gMonPalette_IceSlugma[] = INCBIN_U32("graphics/pokemon/variant_slugma/normal.gbapal.lz");
+const u32 gMonBackPic_IceSlugma[] = INCBIN_U32("graphics/pokemon/variant_slugma/back.4bpp.lz");
+const u32 gMonShinyPalette_IceSlugma[] = INCBIN_U32("graphics/pokemon/variant_slugma/shiny.gbapal.lz");
+const u8 gMonIcon_IceSlugma[] = INCBIN_U8("graphics/pokemon/variant_slugma/icon.4bpp");
+const u8 gMonFootprint_IceSlugma[] = INCBIN_U8("graphics/pokemon/variant_slugma/footprint.1bpp");

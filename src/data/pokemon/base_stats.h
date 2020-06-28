@@ -5732,6 +5732,31 @@ const struct BaseStats gBaseStats[] =
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
+	
+	[SPECIES_ICESLUGMA] =
+    {
+        .baseHP        = 40,
+        .baseAttack    = 40,
+        .baseDefense   = 40,
+        .baseSpeed     = 20,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 40,
+        .type1 = TYPE_FIRE,
+        .type2 = TYPE_ICE,
+        .catchRate = 190,
+        .expYield = 50,
+        .evYield_SpAttack  = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 70,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroup1 = EGG_GROUP_AMORPHOUS,
+        .eggGroup2 = EGG_GROUP_AMORPHOUS,
+        .abilities = {ABILITY_MAGMA_ARMOR, ABILITY_GOOEY},
+        .abilityHidden = ABILITY_WEAK_ARMOR,
+        .bodyColor = BODY_COLOR_RED,
+        .noFlip = FALSE,
+    },
 
     [SPECIES_MAGCARGO] =
     {

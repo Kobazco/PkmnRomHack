@@ -1090,6 +1090,11 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 0x6
     },
+	[SPECIES_ICESLUGMA] =
+    {
+        .size = 0x87,
+        .y_offset = 0x6
+    },
     [SPECIES_MAGCARGO] =
     {
         .size = 0x87,

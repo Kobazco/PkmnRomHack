@@ -219,6 +219,7 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_TEDDIURSA] = gMonFootprint_Teddiursa,
     [SPECIES_URSARING] = gMonFootprint_Ursaring,
     [SPECIES_SLUGMA] = gMonFootprint_Slugma,
+	[SPECIES_ICESLUGMA] = gMonFootprint_IceSlugma,
     [SPECIES_MAGCARGO] = gMonFootprint_Magcargo,
     [SPECIES_SWINUB] = gMonFootprint_Swinub,
     [SPECIES_PILOSWINE] = gMonFootprint_Piloswine,

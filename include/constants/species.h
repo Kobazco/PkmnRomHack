@@ -912,7 +912,10 @@
 #define SPECIES_LYCANROC_MIDNIGHT 902
 #define SPECIES_LYCANROC_DUSK 903
 
-#define SPECIES_EGG 904
+// Regional forms
+#define SPECIES_ICESLUGMA 904
+
+#define SPECIES_EGG 905
 #define NUM_SPECIES SPECIES_EGG
 
 // Unown forms, not actual species

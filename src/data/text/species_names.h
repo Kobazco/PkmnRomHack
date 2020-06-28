@@ -218,6 +218,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_TEDDIURSA] = _("Teddiursa"),
     [SPECIES_URSARING] = _("Ursaring"),
     [SPECIES_SLUGMA] = _("Slugma"),
+	[SPECIES_ICESLUGMA] = _("Ice Slugma"),
     [SPECIES_MAGCARGO] = _("Magcargo"),
     [SPECIES_SWINUB] = _("Swinub"),
     [SPECIES_PILOSWINE] = _("Piloswine"),

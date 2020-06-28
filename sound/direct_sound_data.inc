@@ -1257,6 +1257,10 @@ Cry_Ursaring::
 	.align 2
 Cry_Slugma::
 	.incbin "sound/direct_sound_samples/cry_slugma.bin"
+	
+	.align 2
+Cry_IceSlugma::
+	.incbin "sound/direct_sound_samples/cry_iceslugma.bin"
 
 	.align 2
 Cry_Magcargo::

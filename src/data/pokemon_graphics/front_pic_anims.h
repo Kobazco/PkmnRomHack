@@ -2556,6 +2556,25 @@ static const union AnimCmd sAnim_SLUGMA_2[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_ICESLUGMA_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_ICESLUGMA_2[] =
+{
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(2, 20),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(2, 20),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_MAGCARGO_1[] =
 {
     ANIMCMD_FRAME(0, 10),
@@ -9530,6 +9549,12 @@ static const union AnimCmd *const sAnims_SLUGMA[] ={
     sAnim_SLUGMA_2,
 };
 
+static const union AnimCmd *const sAnims_ICESLUGMA[] ={
+    sAnim_GeneralFrame0,
+    sAnim_ICESLUGMA_1,
+    sAnim_ICESLUGMA_2,
+};
+
 static const union AnimCmd *const sAnims_MAGCARGO[] ={
     sAnim_GeneralFrame0,
     sAnim_MAGCARGO_1,
@@ -13329,6 +13354,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(URSARING),
     ANIM_CMD(SLUGMA),
     ANIM_CMD(MAGCARGO),
+	ANIM_CMD(ICESLUGMA),
     ANIM_CMD(SWINUB),
     ANIM_CMD(PILOSWINE),
     ANIM_CMD(CORSOLA),

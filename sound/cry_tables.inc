@@ -219,6 +219,7 @@ gCryTable:: @ 869DCF4
 	cry Cry_Teddiursa  @ 869E708
 	cry Cry_Ursaring  @ 869E714
 	cry Cry_Slugma  @ 869E720
+	cry Cry_IceSlugma
 	cry Cry_Magcargo  @ 869E72C
 	cry Cry_Swinub  @ 869E738
 	cry Cry_Piloswine  @ 869E744
@@ -1129,6 +1130,7 @@ gCryTable2:: @ 869EF24
 	cry2 Cry_Teddiursa  @ 869F938
 	cry2 Cry_Ursaring  @ 869F944
 	cry2 Cry_Slugma  @ 869F950
+	cry2 Cry_IceSlugma
 	cry2 Cry_Magcargo  @ 869F95C
 	cry2 Cry_Swinub  @ 869F968
 	cry2 Cry_Piloswine  @ 869F974

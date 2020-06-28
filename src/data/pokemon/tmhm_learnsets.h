@@ -5428,7 +5428,26 @@ const u32 gTMHMLearnsets[][2] =
 											| TMHM(TM41_TORMENT)
 											| TMHM(TM06_TOXIC)),
 
-    [SPECIES_SLUGMA]      = TMHM_LEARNSET(TMHM(TM45_ATTRACT)
+    [SPECIES_ICESLUGMA]      = TMHM_LEARNSET(TMHM(TM45_ATTRACT)
+											| TMHM(TM32_DOUBLE_TEAM)
+											| TMHM(TM42_FACADE)
+											| TMHM(TM38_FIRE_BLAST)
+											| TMHM(TM35_FLAMETHROWER)
+											| TMHM(TM21_FRUSTRATION)
+											| TMHM(TM10_HIDDEN_POWER)
+											| TMHM(TM16_LIGHT_SCREEN)
+											| TMHM(TM50_OVERHEAT)
+											| TMHM(TM17_PROTECT)
+											| TMHM(TM33_REFLECT)
+											| TMHM(TM44_REST)
+											| TMHM(TM27_RETURN)
+											| TMHM(HM06_ROCK_SMASH)
+											| TMHM(TM39_ROCK_TOMB)
+											| TMHM(TM43_SECRET_POWER)
+											| TMHM(TM11_SUNNY_DAY)
+											| TMHM(TM06_TOXIC)),
+											
+											[SPECIES_SLUGMA]      = TMHM_LEARNSET(TMHM(TM45_ATTRACT)
 											| TMHM(TM32_DOUBLE_TEAM)
 											| TMHM(TM42_FACADE)
 											| TMHM(TM38_FIRE_BLAST)

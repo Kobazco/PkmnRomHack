@@ -1497,6 +1497,8 @@ const u16 gEasyChatWordsByLetter_S[] = {
     -1, 2, // Doubled pokemon species name
     EC_POKEMON(SLUGMA),
     EC_POKEMON2(SLUGMA),
+	EC_POKEMON(ICESLUGMA),
+    EC_POKEMON2(ICESLUGMA),
     EC_WORD_SMACK,
     EC_WORD_SMALL,
     EC_WORD_SMART,
